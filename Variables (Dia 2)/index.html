@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_contenido">
+            <div class="container_informaciones">
+                <div class="container_texto">
+                    <h1>¡Bienvenido!</h1>
+                    <p class="texto_parrafo">Contesta las siguientes preguntas</p>
+                </div>
+                <input type="text" id="nombreUsuario" placeholder="¿Cuál es tu nombre?" class="container__input">
+                <input type="number" id="edadUsuario" placeholder="¿Cuántos años tienes?" class="container__input" min="1" max="120">
+                <input type="text" id="lenguajeUsuario" placeholder="¿Qué lenguaje de programación estás estudiando?" class="container__input">
+                <p id="mensajeUsuario" class="mensajeUno"></p> <!-- Aquí se mostrará el mensaje al usuario -->
+                <div class="container_botones">
+                    <button onclick="obtenerDatos();" class="container__boton">Enviar</button>
+                    <button onclick="reiniciarFormulario();" class="container__boton" id="reiniciar" disabled>Reiniciar</button>
+                </div>
+            </div>
+            <div id="preguntaContainer" class="container_pregunta" style="display:none;">
+                <p id="preguntaTexto" class="pregunta_texto"></p>
+                <button onclick="responderPregunta(1);" class="container__boton">SÍ</button>
+                <button onclick="responderPregunta(2);" class="container__boton">NO</button>
+            </div>
+            <p id="mensajeUsuarioDos" class="mensajeDos"></p> <!-- Aquí se mostrará el mensaje al usuario -->
+            <img src="./img/lenguajesdeprogramacion_principal.jpg" alt="Lenguajes de programación">
+        </div>
+    </div>
+    <script src="Variables.js"></script>
+</body>
+</html>
+

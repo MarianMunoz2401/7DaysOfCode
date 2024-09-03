@@ -1,0 +1,115 @@
+/* Reset básico para asegurarnos de que los estilos se apliquen de manera uniforme en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #95BDFF; /* Color de fondo */
+    padding: 20px;
+}
+
+/* Contenido del formulario */
+.container_contenido {
+    background: #DFFFD8; /* Fondo claro para el formulario */
+    border-radius: 12px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    padding: 30px;
+    max-width: 600px; /* Un poco más ancho */
+    width: 100%;
+    border: 2px solid #EA8FEA; /* Borde sutil con color de acento */
+}
+
+/* Estilos para el texto de bienvenida */
+.container_texto {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container_texto h1 {
+    color: #EA8FEA; /* Color vibrante para el título */
+    font-size: 2.8em; /* Tamaño de fuente un poco más grande */
+    margin-bottom: 10px;
+}
+
+.container_texto .texto_parrafo {
+    color: #9602ff; /* Color del subtítulo */
+    font-size: 1.6em; /* Tamaño de fuente mayor */
+}
+
+/* Estilos para los campos de entrada */
+.container__input {
+    width: calc(100% - 22px); /* Ajusta el ancho para el padding */
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container__input:focus {
+    border-color: #B4E4FF;
+    box-shadow: 0 0 8px rgba(180, 228, 255, 0.5);
+    outline: none;
+}
+
+.pregunta_texto {
+    color: #9602ff; /* Color del subtítulo */
+    font-size: 1.3em; /* Tamaño de fuente mayor */
+}
+/* Estilos para los mensajes al usuario */
+.mensajeUno, .mensajeDos {
+    font-size: 1.3em; /* Tamaño de fuente mayor */
+    color: #9602ff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Contenedor de los botones */
+.container_botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Estilos para los botones */
+.container__boton {
+    background-color: #C04A82; /* Color de fondo de los botones */
+    color: #fff;
+    border: 2px solid #C04A82; /* Borde del botón del mismo color */
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.container__boton:hover {
+    background-color: #EA8FEA;
+    border-color: #EA8FEA; /* Cambio en el borde en hover */
+}
+
+/* Contenedor para las preguntas adicionales */
+.container_pregunta {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Estilos para la imagen */
+img {
+    width: 100%;
+    max-width: 650px; /* Tamaño de la imagen ligeramente mayor */
+    border-radius: 12px; /* Bordes redondeados */
+    margin-top: 30px;
+}
+
