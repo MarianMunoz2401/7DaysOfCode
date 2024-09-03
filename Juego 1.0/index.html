@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Elección de Especialidad</title>
+    <link rel="stylesheet" href="style.css"> <!-- Aquí enlazarías tu CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Bienvenido al Quiz!</h1>
+        <p>Contesta las siguientes preguntas a continuación</p>
+
+        <!-- Pregunta sobre especialidad -->
+        <div class="container_especialidad">
+            <p>¿Qué especialidad te gustaría aprender?</p>
+            <div class="botones">
+                <button id="btnFrontend" onclick="escogerEspecialidad('Front-end', this)">Front-end</button>
+                <button id="btnBackend" onclick="escogerEspecialidad('Back-end', this)">Back-end</button>
+            </div>
+            <p id="mensajeUsuarioUno" class="mensaje"></p>
+        </div>
+
+        <!-- Pregunta sobre especialización -->
+        <div class="container_especializacion" id="especializacionSection" style="display: none;">
+            <p>¿Te gustaría seguir especializándote en tu área elegida o desarrollarte como FullStack?</p>
+            <div class="botones">
+                <button id="btnEspecializarme" onclick="responderEspecializacion('Especializarme', this)">Especializarme</button>
+                <button id="btnFullStack" onclick="responderEspecializacion('FullStack', this)">FullStack</button>
+            </div>
+            <p id="mensajeUsuarioDos" class="mensaje"></p>
+        </div>
+
+        <!-- Sección para agregar tecnologías -->
+        <div class="container_tecnologia" id="tecnologiasSection" style="display: none;">
+            <p>Agrega las tecnologías que te gustaría aprender:</p>
+            <ul id="listaTecnologias"></ul>
+            <input type="text" id="tecnologiaInput" placeholder="Ingresa una tecnología">
+            <div class="botones">
+                <button id="btnAgregarTecnologia" onclick="agregarTecnologia()">Agregar Tecnología</button>
+                <button id="btnFinalizar" onclick="finalizar()">Finalizar</button>
+            </div>
+        </div>
+
+        <!-- Mensaje final -->
+        <div class="container_mensajeFinal" id="mensajeFinal" style="display: none;">
+            <p>¡Gracias por participar! Sigue aprendiendo lo que te apasiona.</p>
+        </div>
+    </div>
+
+    <script src="Juego.js"></script> <!-- Aquí enlazarías tu JavaScript -->
+</body>
+</html>

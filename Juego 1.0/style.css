@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+/* Variables de color y fuente */
+:root {
+    --color-primario: #283618;
+    --color-secundario: #606c38;
+    --color-terciario: #fefae0;
+    --color-cuaternario: #dda15e;
+    --color-quinario: #bc6c25;
+    --fuente: "Open Sans", sans-serif;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-quinario);
+    color: var(--color-terciario);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--color-cuaternario);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--color-terciario);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: left;
+    color: var(--color-terciario);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.container_especialidad,
+.container_especializacion,
+.container_tecnologia {
+    margin-top: 20px;
+    color: var(--color-secundario);
+    font-size: 1em;
+}
+
+.container_especialidad p,
+.container_especializacion p,
+.container_tecnologia p {
+    font-size: 1.5em;
+    color: var(--color-terciario);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+}
+
+button.selected {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    font-weight: bold;
+}
+
+button.disabled {
+    background-color: var(--color-cuaternario);
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Input y lista */
+#tecnologiaInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Mensaje final */
+.container_mensajeFinal {
+    text-align: center;
+}
+
+
+
+
+/* Estilos específicos para diferentes dispositivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
