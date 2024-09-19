@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #4361ee;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo_alura {
+    width: 100px;
+    height: auto;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+.link_desafios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.link_desafios a {
+    display: block;
+    text-decoration: none;
+}
+
+.link_desafios a:hover {
+    text-decoration: underline;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.link_desafios a:visited {
+    color: #f9c74f;
+}
+
+footer {
+    background-color: #4361ee;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.redes__sociales {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-link img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.desarrollado_por {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
